@@ -2,7 +2,7 @@
  * @Description: 响应式博客描述文件
  * @Author: CY小尘s
  * @Date: 2021-07-04 17:58:40
- * @LastEditTime: 2021-07-05 16:11:08
+ * @LastEditTime: 2021-07-05 16:13:51
  * @LastEditors: 学习
 -->
 # 导言
@@ -16,31 +16,53 @@ https://www.yuque.com/docs/share/77578f40-8201-4682-aeba-880b1b497dfc?#
 ## 二、后台页面说明
 ### Src --> View（blog 页面视图）：
 #### Home ：
+```
 单页面，作为博客的进入页
+```
 #### Blog：
+```
 多页面，负责展示页面
+```
 ### Src --> components（blog 组件）：
 #### Header：
+```
 blog 展示的头部组件
+```
 #### ArticleList：
+```
 blog 展示的主要内容组件
+```
 #### AddArticle：
+```
 blog 文章添加组件
+```
 #### Flooter：
+```
 博客尾部组件
+```
 #### QuillEditor：
+```
 富文本组件
+```
 #### ShowBlog：
+```
 博客预览组件
+```
 #### About：
 关于博客
 #### Artiecle：
+```
 博客文章
+```
 #### Skills：
+```
 技能条
+```
 ### src --> assets --> js（公有函数库）：
 #### commons.js：
+```
 初始化博客上传时间插件
+```
 ## 三、使用教程
 ### 克隆项目
 ```
