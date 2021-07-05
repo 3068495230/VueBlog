@@ -2,7 +2,7 @@
  * @Description: 响应式博客描述文件
  * @Author: CY小尘s
  * @Date: 2021-07-04 17:58:40
- * @LastEditTime: 2021-07-05 16:13:51
+ * @LastEditTime: 2021-07-05 16:14:41
  * @LastEditors: 学习
 -->
 # 导言
@@ -49,7 +49,9 @@ blog 文章添加组件
 博客预览组件
 ```
 #### About：
+```
 关于博客
+```
 #### Artiecle：
 ```
 博客文章
