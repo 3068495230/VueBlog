@@ -1,0 +1,95 @@
+{
+  "name": "myblog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server": "json-server --watch ./src/http/mockServer/data.json --port 3001 -r ./src/http/mockServer/routes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/qingchen666/VueBlog.git"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-particles": "^1.0.9",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-async-in-computed-properties": "off",
+      "vue/no-dupe-keys": "off",
+      "vue/no-duplicate-attributes": "off",
+      "vue/no-parsing-error": "off",
+      "vue/no-reserved-keys": "off",
+      "vue/no-shared-component-data": "off",
+      "vue/no-side-effects-in-computed-properties": "off",
+      "vue/no-template-key": "off",
+      "vue/no-textarea-mustache": "off",
+      "vue/no-unused-components": "off",
+      "vue/no-unused-vars": "off",
+      "vue/no-use-v-if-with-v-for": "off",
+      "vue/require-component-is": "off",
+      "vue/require-prop-type-constructor": "off",
+      "vue/require-render-return": "off",
+      "vue/require-v-for-key": "off",
+      "vue/require-valid-default-prop": "off",
+      "vue/return-in-computed-property": "off",
+      "vue/use-v-on-exact": "off",
+      "vue/valid-template-root": "off",
+      "vue/valid-v-bind": "off",
+      "vue/valid-v-cloak": "off",
+      "vue/valid-v-else-if": "off",
+      "vue/valid-v-else": "off",
+      "vue/valid-v-for": "off",
+      "vue/valid-v-html": "off",
+      "vue/valid-v-if": "off",
+      "vue/valid-v-model": "off",
+      "vue/valid-v-on": "off",
+      "vue/valid-v-once": "off",
+      "vue/valid-v-pre": "off",
+      "vue/valid-v-show": "off",
+      "vue/valid-v-text": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "author": "a尘s",
+  "license": "ISC"
+}
