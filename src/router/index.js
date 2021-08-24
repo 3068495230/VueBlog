@@ -2,7 +2,7 @@
  * @Description: 文件描述
  * @Author: CY小尘s
  * @Date: 2021-05-30 00:09:33
- * @LastEditTime: 2021-05-31 23:40:56
+ * @LastEditTime: 2021-07-21 01:57:02
  * @LastEditors: 学习
  */
 import Vue from 'vue'
@@ -52,6 +52,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  // mode: 'history',
+  base: process.env.BASE_URL,
   routes,
   linkActiveClass: 'linkFocus'
 })

@@ -100,6 +100,7 @@ export default {
         padding: 10px 10px;
         margin: 10px auto;
         color: white;
+        text-indent: 30px;
     }
     // 文章下半部分样式
     .bottom{

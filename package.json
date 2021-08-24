@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "server": "json-server --watch ./src/http/mockServer/data.json --port 3001 -r ./src/http/mockServer/routes.json"
+    "lint": "vue-cli-service lint"
   },
   "repository": {
     "type": "git",
