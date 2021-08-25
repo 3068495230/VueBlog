@@ -1,8 +1,8 @@
 /*
- * @Description: 文件描述
+ * @Description: router 配置
  * @Author: CY小尘s
  * @Date: 2021-05-30 00:09:33
- * @LastEditTime: 2021-07-21 01:57:02
+ * @LastEditTime: 2021-08-25 22:49:38
  * @LastEditors: 学习
  */
 import Vue from 'vue'

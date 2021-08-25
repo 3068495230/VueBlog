@@ -15,91 +15,87 @@
 <script>
 // 工具栏配置
 const toolbarOptions = [
-     // 加粗 斜体 下划线 删除线
-    ["bold", "italic", "underline", "strike"],
-    // 引用  代码块
-    ["blockquote", "code-block"],
-    // 1、2 级标题
-    [{ header: 1 }, { header: 2 }],
-    // 有序、无序列表
-    [{ list: "ordered" }, { list: "bullet" }],
-    // 上标 、下标
-    [{ script: "sub" }, { script: "super" }],
-    // 缩进
-    [{ indent: "-1" }, { indent: "+1" }],
-    // 文本方向
-    [{'direction': 'rtl'}],
-    // 字体大小
-    [{ size: ["small", false, "large", "huge"] }],
-    // 标题
-    [{ header: [1, 2, 3, 4, 5, 6, false] }],
-    // 字体颜色、字体背景颜色
-    [{ color: [] }, { background: [] }],
-    // 字体种类
-    [{ font: [] }],
-    // 对齐方式
-    [{ align: [] }],
-    // 清除文本格式
-    ["clean"],
-    // 链接
-    ["link",]
-]
+  // 加粗 斜体 下划线 删除线
+  ["bold", "italic", "underline", "strike"],
+  // 引用  代码块
+  ["blockquote", "code-block"],
+  // 1、2 级标题
+  [{ header: 1 }, { header: 2 }],
+  // 有序、无序列表
+  [{ list: "ordered" }, { list: "bullet" }],
+  // 上标 、下标
+  [{ script: "sub" }, { script: "super" }],
+  // 缩进
+  [{ indent: "-1" }, { indent: "+1" }],
+  // 文本方向
+  [{ direction: "rtl" }],
+  // 字体大小
+  [{ size: ["small", false, "large", "huge"] }],
+  // 标题
+  [{ header: [1, 2, 3, 4, 5, 6, false] }],
+  // 字体颜色、字体背景颜色
+  [{ color: [] }, { background: [] }],
+  // 字体种类
+  [{ font: [] }],
+  // 对齐方式
+  [{ align: [] }],
+  // 清除文本格式
+  ["clean"],
+  // 链接
+  ["link"]
+];
 // 导入富文本
 import { quillEditor } from "vue-quill-editor";
 
 export default {
-    name: 'QuillEditor',
-    props: {
-        value: {
-            type: String
-        }
-    },
-    components: {
-        quillEditor
-    },
-    data() {
-    return {
-        content: this.value,
-            editorOption: {
-                placeholder: "",
-                theme: "snow", // or 'bubble'
-                placeholder: "输入内容",
-                modules: {
-                    toolbar: {
-                        container: toolbarOptions,
-                    }
-                }
-            },
-        }
-    },
-    methods: {
-        onEditorBlur() {
-
-        },
-        onEditorFocus() {
-
-        },
-        onEditorChange() {
-          // 调佣父组件方法，实现自子组件向父组件传值
-           this.$emit('content', this.content)
-        },
+  name: "QuillEditor",
+  props: {
+    value: {
+      type: String
     }
-}
+  },
+  components: {
+    quillEditor
+  },
+  data() {
+    return {
+      content: this.value,
+      editorOption: {
+        placeholder: "",
+        theme: "snow", // or 'bubble'
+        placeholder: "输入内容",
+        modules: {
+          toolbar: {
+            container: toolbarOptions
+          }
+        }
+      }
+    };
+  },
+  methods: {
+    onEditorBlur() {},
+    onEditorFocus() {},
+    onEditorChange() {
+      // 调佣父组件方法，实现自子组件向父组件传值
+      this.$emit("content", this.content);
+    }
+  }
+};
 </script>
 
 <style>
-.editor{
+.editor {
   line-height: normal !important;
   min-height: 400px;
   color: white;
 }
-.ql-editor{
+.ql-editor {
   min-height: 400px;
 }
-.editor:hover{
-   box-shadow: 0px 0px 5px white;
+.editor:hover {
+  box-shadow: 0px 0px 5px white;
 }
-.ql-editor:hover{
+.ql-editor:hover {
   box-shadow: 0px 0px 5px white;
 }
 .ql-snow .ql-tooltip[data-mode="link"]::before {
