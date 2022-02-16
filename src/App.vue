@@ -40,9 +40,7 @@
 
 <script>
 export default {
-  name: "App",
-  // 注册组件
-  components: {}
+  name: "App"
 };
 </script>
 
@@ -50,6 +48,8 @@ export default {
 * {
   margin: 0px;
   padding: 0px;
+  color: white;
+  text-decoration: none;
 }
 // 粒子特效背景
 #particles-js {

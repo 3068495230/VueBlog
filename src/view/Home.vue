@@ -7,20 +7,26 @@
 -->
 <template>
   <div class="home">
-    <div class="mian">
+    <div class="main">
       <div class="log">
-        <a href="#">
+        <router-link to="office/offices">
           <img src="../assets/img/t01b3bc142b70ef7e0e.jpg" alt="你好" />
           <p>achens</p>
-        </a>
+        </router-link>
       </div>
       <div class="but">
-        <button>GitHub</button>
-        <button>gitee</button>
-        <router-link to="blog/articleList">
-          <button>浏览博客</button>
+        <button onclick="window.location.href='https://gitee.com/achens'">
+          Gitee
+        </button>
+        <button
+          onclick="window.location.href='https://www.yuque.com/xiaochens'"
+        >
+          浏览语雀
+        </button>
+        <router-link to="office/offices">
+          <button>浏览 office</button>
         </router-link>
-        <router-link to="blog/about">
+        <router-link to="office/about">
           <button>关于我</button>
         </router-link>
       </div>
@@ -38,7 +44,7 @@ export default {
 .home {
   width: 100%;
   height: 100%;
-  .mian {
+  .main {
     width: 100%;
     height: 50%;
     margin: 100px auto 0px auto;

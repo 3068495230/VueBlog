@@ -2,8 +2,8 @@
  * @Description: 头部组件
  * @Author: CY小尘s
  * @Date: 2021-05-30 00:17:39
- * @LastEditTime: 2021-08-25 22:49:14
- * @LastEditors: 学习
+ * @LastEditTime: 2022-02-16 19:31:59
+ * @LastEditors: Please set LastEditors
 -->
 <template>
   <div class="header">
@@ -13,17 +13,17 @@
         <img src="../assets/img/t01b3bc142b70ef7e0e.jpg" alt="Logo" />
       </router-link>
       <div class="text">
-        <p>Vue</p>
-        <p>博客系统</p>
+        <p>achens -</p>
+        <p>Office</p>
       </div>
     </div>
     <!-- 右边切换页面路由 -->
     <div class="link">
       <!--屏幕宽度大于 600px 时  -->
       <div class="linkMax">
-        <router-link to="articleList">博客列表</router-link>
-        <router-link to="addArticle">添加博客</router-link>
-        <router-link to="about">关于博客</router-link>
+        <router-link to="offices">Office</router-link>
+        <a href="https://www.yuque.com/xiaochens" target="_blank">语雀</a>
+        <router-link to="about">关于我</router-link>
       </div>
       <!--屏幕宽度小于 600px 时  -->
       <div class="linkMin">
@@ -31,19 +31,15 @@
           <span :class="show ? 'rotate' : ''"></span>
           <li v-show="show">
             <router-link
-              :class="this.$route.meta == 'articleList' ? 'focus' : ''"
-              to="articleList"
-              >博客列表</router-link
+              :class="this.$route.meta == 'offices' ? 'focus' : ''"
+              to="offices"
+              >Office</router-link
             >
-            <router-link
-              :class="this.$route.meta == 'addArticle' ? 'focus' : ''"
-              to="addArticle"
-              >添加博客</router-link
-            >
+            <a href="https://www.yuque.com/xiaochens" target="_blank">语雀</a>
             <router-link
               :class="this.$route.meta == 'about' ? 'focus' : ''"
               to="about"
-              >关于博客</router-link
+              >关于我</router-link
             >
           </li>
         </ul>
@@ -75,7 +71,6 @@ export default {
   max-width: 1000px;
   height: 80px;
   background-color: rgba(66, 66, 66, 0.3);
-  color: white;
   border: 1px solid white;
   margin: 0px auto;
   display: flex;
@@ -93,8 +88,13 @@ export default {
     }
     // Logo 文本
     .text {
+      p {
+        float: left;
+        margin-left: 5px;
+      }
+      line-height: 60px;
       float: left;
-      padding: 10px 0px 0px 10px;
+      padding: 10px 0px 0px 5px;
     }
   }
   .link {

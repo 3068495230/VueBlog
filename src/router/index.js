@@ -5,57 +5,47 @@
  * @LastEditTime: 2021-08-25 22:49:38
  * @LastEditors: 学习
  */
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    component: () => import('../view/Home.vue')
+    path: "/",
+    component: () => import("../view/Home.vue")
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: () => import('../view/Home.vue')
+    path: "/home",
+    name: "Home",
+    component: () => import("../view/Home.vue")
   },
   {
-    path: '/blog',
-    component: () => import('../view/Blog.vue'),
+    path: "/office",
+    name: "Office",
+    component: () => import("../view/Office.vue"),
     children: [
       {
-        path: '',
-        name: 'articleList',
-        component: () => import('../components/ArticleList.vue')
+        path: "offices",
+        name: "Offices",
+        meta: "offices",
+        component: () => import("../components/offices.vue")
       },
       {
-        path: 'articleList',
-        name: 'ArticleList',
-        meta: 'articleList',
-        component: () => import('../components/ArticleList.vue')
-      },
-      {
-        path: 'addArticle',
-        name: 'AddArticle',
-        meta: 'addArticle',
-        component: () => import('../components/AddArticle.vue')
-      },
-      {
-        path: 'about',
-        name: 'About',
-        meta: 'about',
-        component: () => import('../components/About.vue')
+        path: "about",
+        name: "About",
+        meta: "about",
+        component: () => import("../components/About.vue")
       }
     ]
   }
-]
+];
 
 const router = new VueRouter({
   // mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  linkActiveClass: 'linkFocus'
-})
+  linkActiveClass: "linkFocus"
+});
 
-export default router
+export default router;
