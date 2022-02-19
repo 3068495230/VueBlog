@@ -2,8 +2,8 @@
  * @Description: 博客进入页
  * @Author: CY小尘s
  * @Date: 2021-07-04 17:59:04
- * @LastEditTime: 2021-08-25 22:49:48
- * @LastEditors: 学习
+ * @LastEditTime: 2022-02-19 17:38:14
+ * @LastEditors: Please set LastEditors
 -->
 <template>
   <div class="home">
@@ -15,8 +15,14 @@
         </a>
       </div>
       <div class="but">
-        <button>GitHub</button>
-        <button>gitee</button>
+        <button onclick="window.location.href='https://gitee.com/achens'">
+          Gitee
+        </button>
+        <button
+          onclick="window.location.href='https://www.yuque.com/xiaochens'"
+        >
+          浏览语雀
+        </button>
         <router-link to="blog/articleList">
           <button>浏览博客</button>
         </router-link>

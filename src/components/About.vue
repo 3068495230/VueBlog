@@ -25,25 +25,26 @@ How lucky to meet you!
       <h2># 个人项目 or 网站</h2>
       <!-- 按钮组 -->
       <div class="but-group">
+        <button onclick="window.location.href='https://gitee.com/achens/s-cli'">
+          S-cli
+        </button>
         <button
-          onclick="window.location.href='https://gitee.com/qingchen666/VueBlog'"
+          onclick="window.location.href='https://gitee.com/achens/squery'"
+        >
+          SQuery
+        </button>
+        <button onclick="window.location.href='https://gitee.com/achens/VueGM'">
+          VueGM
+        </button>
+        <button
+          onclick="window.location.href='https://gitee.com/achens/VueBlog'"
         >
           VueBlog
         </button>
         <button
-          onclick="window.location.href='https://gitee.com/qingchen666/vue-blog-admin'"
+          onclick="window.location.href='https://gitee.com/achens/CoolButton'"
         >
-          VueBlog
-        </button>
-        <button
-          onclick="window.location.href='https://gitee.com/qingchen666/cool-button'"
-        >
-          CoolButon
-        </button>
-        <button
-          onclick="window.location.href='https://gitee.com/qingchen666/daily-algorithm'"
-        >
-          jsonRequest
+          CoolButton
         </button>
       </div>
     </div>
@@ -55,7 +56,7 @@ How lucky to meet you!
         <button onclick="window.location.href='https://github.com/3068495230'">
           Github
         </button>
-        <button onclick="window.location.href='https://gitee.com/qingchen666'">
+        <button onclick="window.location.href='https://gitee.com/achens'">
           Gitee
         </button>
         <button
@@ -87,14 +88,17 @@ How lucky to meet you!
     </div>
     <!-- 其他 -->
     <div class="other but">
-      <h2># 其他</h2>
+      <h2># 联系方式</h2>
       <!-- 按钮组 -->
       <div class="but-group">
-        <button onclick="window.location.href='https://gitee.com/qingchen666'">
-          测试
+        <button onclick="alert(3068495230)">
+          QQ
         </button>
-        <button onclick="window.location.href='https://gitee.com/qingchen666'">
-          测试
+        <button onclick="alert('MC1744758326S')">
+          WeChat
+        </button>
+        <button onclick="alert('3068495230@qq.com')">
+          Email
         </button>
       </div>
     </div>
